@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shayan Monavari | Personal Website</title>
+  <style>
+    /* Modern and minimal dark design */
+    body {
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      direction: rtl;
+      margin: 0;
+      padding: 0;
+      background-color: #0d1117; /* Dark background */
+      color: #c9d1d9; /* Text color */
+    }
+
+    /* Header styling */
+    header {
+      background-color: #161b22;
+      color: white;
+      padding: 1rem 0;
+      text-align: center;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 0.5rem 1rem;
+      font-size: 1.1rem;
+      transition: color 0.3s, background 0.3s;
+    }
+
+    nav a:hover {
+      background-color: #0073e6;
+      border-radius: 5px;
+    }
+
+    section {
+      padding: 6rem 10%;
+      margin-top: 4rem;
+    }
+
+    h1, h2 {
+      color: white;
+    }
+
+    h1 {
+      margin-top: 0;
+      font-size: 2.5rem;
+    }
+
+    /* Home section styling */
+    #home {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    #home img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      margin-bottom: 1rem;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+      border: 3px solid #0073e6;
+    }
+
+    #home div {
+      max-width: 600px;
+      margin: 1rem;
+    }
+
+    #home p {
+      font-size: 1.2rem;
+      line-height: 1.8;
+    }
+
+    /* Skills section */
+    #skills ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    #skills li {
+      margin: 1rem 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: #161b22;
+      padding: 1rem;
+      border-radius: 5px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    }
+
+    #skills .progress {
+      background-color: #2c2c2c;
+      border-radius: 5px;
+      width: 60%;
+      height: 10px;
+      overflow: hidden;
+      position: relative;
+    }
+
+    #skills .progress div {
+      height: 100%;
+      background: linear-gradient(90deg, #0073e6, #00d4ff);
+      transition: width 0.5s;
+    }
+
+    /* Contact Section */
+    #contact {
+      margin-top: 2rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    #contact .contact-item {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      background-color: #161b22;
+      padding: 1rem;
+      border-radius: 5px;
+      width: 100%;
+      max-width: 400px;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    }
+
+    #contact .contact-item img {
+      width: 24px;
+      height: 24px;
+    }
+
+    footer {
+      background-color: #161b22;
+      color: white;
+      text-align: center;
+      padding: 1rem 0;
+      margin-top: 2rem;
+    }
+
+    .footer-links a {
+      color: white;
+      text-decoration: none;
+      margin: 0 0.5rem;
+    }
+
+    .footer-links a:hover {
+      color: #0073e6;
+    }
+  </style>
+</head>
+<body>
+<header>
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact Me</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section id="home">
+  <img src="assets/images/profile-picture.jpg" alt="Profile Picture">
+  <div>
+    <h2>About Me</h2>
+    <p>
+      Hello, I'm Shayan Monavari, a passionate and dedicated professional with expertise in design, programming, and technology. 
+      I have years of experience in graphic design using tools like Photoshop and Illustrator, alongside programming with Python, PHP, and C#. 
+      My goal is to create innovative and impactful projects that inspire and solve real-world problems.
+    </p>
+  </div>
+</section>
+
+<section id="skills">
+  <h2>My Skills</h2>
+  <div class="skills">
+    <ul>
+      <li>
+        <span>Photoshop</span>
+        <div class="progress"><div style="width: 90%;"></div></div>
+        <span>90%</span>
+      </li>
+      <li>
+        <span>Illustrator</span>
+        <div class="progress"><div style="width: 70%;"></div></div>
+        <span>70%</span>
+      </li>
+      <li>
+        <span>PHP</span>
+        <div class="progress"><div style="width: 60%;"></div></div>
+        <span>60%</span>
+      </li>
+      <li>
+        <span>Python</span>
+        <div class="progress"><div style="width: 85%;"></div></div>
+        <span>85%</span>
+      </li>
+      <li>
+        <span>HTML & CSS</span>
+        <div class="progress"><div style="width: 65%;"></div></div>
+        <span>65%</span>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact Me</h2>
+  <div class="contact-item">
+    <img src="assets/images/instagram-icon.png" alt="Instagram">
+    <a href="https://www.instagram.com/yourusername" target="_blank">Instagram</a>
+  </div>
+  <div class="contact-item">
+    <img src="assets/images/telegram-icon.png" alt="Telegram">
+    <a href="https://t.me/yourusername" target="_blank">Telegram</a>
+  </div>
+  <div class="contact-item">
+    <img src="assets/images/email-icon.png" alt="Email">
+    <a href="mailto:your-email@example.com" target="_blank">Email</a>
+  </div>
+  <div class="contact-item">
+    <img src="assets/images/x-icon.png" alt="X">
+    <a href="https://x.com/yourusername" target="_blank">X</a>
+  </div>
+</section>
+
+<footer>
+  <p>All rights reserved &copy; 2024</p>
+</footer>
+</body>
+</html>
